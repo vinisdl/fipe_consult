@@ -1,0 +1,72 @@
+﻿<html>
+    <head>
+
+        <script src="jquery.min.js"></script>
+
+        <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+        <link rel="stylesheet" href="material-components-web.min.css">
+        <script  src="background.js"></script>
+    </head>
+
+      <body  style="width: 300px;">
+    <header class="mdc-top-app-bar" style="position: relative">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">                
+                <span class="mdc-top-app-bar__title">Fipe Consult</span>
+                </section>
+            </div>
+        </header>
+        <div class="selects" style="position: relative;">
+                <div class="mdc-select" style="width: 100%;">
+                        <i class="mdc-select__dropdown-icon"></i>
+                        <select class="mdc-select__native-control" id="idTipo">
+                                <option value=""></option>
+                                <option name="Motos" value="motos">Motos</option>
+                                <option name="Carro" value="carro">Carro</option>
+                                <option name="Caminhão" value="caminhao">Caminhão</option>
+                        </select>
+                        <label class="mdc-floating-label">Tipo</label>
+                        <div class="mdc-line-ripple"></div>
+                    </div>
+            <div class="mdc-select" style="width: 100%;">
+                <i class="mdc-select__dropdown-icon"></i>
+                <select class="mdc-select__native-control" id="idMarca">
+                    <option value=""></option>
+                </select>
+                <label class="mdc-floating-label">Marca</label>
+                <div class="mdc-line-ripple"></div>
+            </div>
+            <div class="mdc-select" style="width: 100%;">
+                <i class="mdc-select__dropdown-icon"></i>
+                <select class="mdc-select__native-control" id="idModelo">
+                    <option value=""></option>
+                </select>
+                <label class="mdc-floating-label">Modelo</label>
+                <div class="mdc-line-ripple"></div>
+            </div>
+            <div class="mdc-select" style="width: 100%;">
+                <i class="mdc-select__dropdown-icon"></i>
+                <select class="mdc-select__native-control" id="idAno">
+                    <option value=""></option>
+                </select>
+                <label class="mdc-floating-label">Ano</label>
+                <div class="mdc-line-ripple"></div>
+            </div>
+        </div>
+        <div id="resultado">
+                <ul class="mdc-list mdc-list--two-line">
+                    <li class="mdc-list-item">
+                        <span class="mdc-list-item__text">
+                        <span class="mdc-list-item__primary-text">Preço Médio</span>
+                        <span class="mdc-list-item__secondary-text" id="preco"></span>
+                        </span>
+                    </li>
+                </ul>
+        </div>
+    </body>
+
+    
+    <!-- Required MDC Web JavaScript library -->
+    <script src="material-components-web.min.js"></script>
+
+</html>
